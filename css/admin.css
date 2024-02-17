@@ -1,0 +1,266 @@
+/* -- Navbar Section-- */
+.logo:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-link:hover{
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    background-color: black;
+}
+
+.nav-options {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding-left: 300px;
+
+}
+
+.nav-item {
+    margin: 0 10px; 
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+}
+
+.logo{
+    font-size: larger;
+    font-weight: 400;
+    color: white;
+}
+
+.btn{
+    padding-left: 200px;
+}
+
+.btn-nav{
+    background-color: green;
+    padding: 5px;
+    width: 100px;
+    border: white;
+    border-radius: 2px;
+}
+
+.navbar-nav .nav-item.active a {
+    border-bottom: 2px solid red;
+    padding-bottom: 5px;
+}
+/* -- Navbar Section Ends-- */
+
+
+/* -- Slider Section Starts--  */
+.slider-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    background: none;
+    border: none;
+}
+
+.prev:focus, .next:focus {
+    outline: none;
+    border: none;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* -- Slider Section Ends --  */
+
+/* -- Table Section -- */
+table {
+    width: 1300px;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.in {
+    width: 80px;
+    height: 30px;
+    border: 2px solid #ddd;
+    box-sizing: border-box; 
+    margin-left: 10%;
+}
+
+.button-container {
+    text-align: end;
+    margin-top: 20px;
+    padding-right: 100px;
+}
+
+/* Style for edit modal */
+.edit-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.edit-modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 620px;
+    width: 700px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.944);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.edit-close {
+    color: white;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.edit-close:hover,
+.edit-close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Style for delete modal */
+.delete-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.delete-modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 230px;
+    width: 600px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.867);
+    padding: 20px;
+}
+
+.delete-close {
+    color: white;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.delete-close:hover,
+.delete-close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.add-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.button-container {
+    text-align: end;
+    margin-top: 20px;
+    padding-right: 100px;
+}
+
+.prev-next-button {
+    height: 30px;
+    width: 100px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.dl-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    z-index: 1000;
+}
+
+/* Modal Styles */
+.ad-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    color: white;
+}
+
